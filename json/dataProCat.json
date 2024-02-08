@@ -1,0 +1,23 @@
+[
+    {
+        "name": "Opis",
+        "Header": "Govedina konzerva",
+        "Description": "Govedina",
+        "popUpDescription":"pop up opis",
+        "image": "../assets/media/GG 101080.png"
+    },
+    {
+        "name": "Opis",
+        "Header": "Piletina konzerva",
+        "Description": "Piletina",
+        "popUpDescription":"pop up opis",
+        "image": "../assets/media/GG 101100.png"
+    },
+    {
+        "name": "Opis",
+        "Header": "Jetra konzerva",
+        "Description": "Jetra",
+        "popUpDescription":"pop up opis",
+        "image": "../assets/media/GG 101140.png"
+    }
+]

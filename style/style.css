@@ -1,0 +1,480 @@
+/* Custom styles */
+
+/* Adjust logo size and padding */
+.brand-logo img {
+  height: 72px; /* Increased from 65px */
+  width: auto; /* Maintain aspect ratio */
+  padding: 8px 0;
+}
+
+
+/* Preloader styles */
+#preloader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #fff;
+    z-index: 99;
+}
+
+.preloader-wrapper {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* Reduce bottom margin of carousel */
+.carousel {
+    margin-bottom: 0;
+}
+
+/* Reduce top margin for section headers */
+.header {
+    margin-top: 10px;
+    margin-bottom: 0; /* New rule to reduce bottom margin of headers */
+}
+
+/* Additional style adjustments */
+
+/* Reduce padding inside the main container */
+main.container {
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+/* Reduce margin for card-title */
+.card .card-title {
+    margin-bottom: 0;
+}
+
+/* Reduce padding inside each card */
+.card {
+    margin: 0;
+    padding: 0;
+    
+}
+
+
+/* Set a specific size for all product images */
+.card .card-image img {
+    width: 100%; /* This ensures the image takes the full width of the card */
+    height: 200px; /* This sets a fixed height for the images */
+    object-fit: contain; /* This makes sure the image covers the area, cropping if necessary */
+  }
+  
+
+  .card .card-image img.product-image {
+    width: 100%; /* makes the image responsive to the container width */
+    height: 200px; /* fixed height for all product images */
+    object-fit:contain; /* cover the container without stretching the image */
+}
+
+  .sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000; /* high index to ensure it's above other elements */
+  }
+  
+
+  .sidenav {
+    z-index: 1001;
+  }
+
+
+  body {
+    background-color: #DFDBE5;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='4' height='4' viewBox='0 0 4 4'%3E%3Cpath fill='%23d50e0e' fill-opacity='0.26' d='M1 3h1v1H1V3zm2-2h1v1H3V1z'%3E%3C/path%3E%3C/svg%3E");
+}
+
+
+.nav-wrapper {
+  height: 70px; /* Set a specific height */
+  padding: 5px 0; /* Adjust top and bottom padding */
+    background-color: #ef1f1f  
+
+}
+
+body, .card-panel {
+    color: #333; /* Dark text for good contrast */
+}
+
+
+  .banner-image {
+    width: 100%; /* adjust as needed */
+    height: auto; /* maintain the aspect ratio */
+    object-fit: cover;
+}
+
+@media only screen and (max-width: 1000px) {
+    .card {
+      margin-bottom: 20px; /* This adds space below each product card */
+    }
+  }
+  
+
+  .banner-container {
+    text-align: center; /* Center the image */
+    padding: 20px; /* Adds some space around the image */
+}
+
+.banner-image {
+    width: 100%;
+    height: auto;
+    border: 5px solid #555; /* Example border, change color as needed */
+    transition: transform 0.3s ease; /* Smooth transition for zoom effect */
+}
+
+.banner-image:hover {
+    transform: scale(1.05); /* Zoom out slightly when hovered */
+    overflow: hidden; /* Prevent the image from overflowing its container */
+}
+
+
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1000; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+  }
+  
+  /* Modal Content (image) - Make it responsive */
+  .modal-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 90%; /* Maximum width */
+    max-height: 90%; /* Maximum height */
+    width: auto; /* Auto width for responsiveness */
+    height: auto; /* Auto height for responsiveness */
+  }
+  
+  /* Caption of Modal Image */
+  #caption {
+    text-align: center;
+    color: #ccc;
+    padding: 10px 0;
+  }
+  
+  /* The Close Button */
+  .close {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
+
+  button.more-info {
+    background-color: #007bff; /* Example color */
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+button.more-info:hover {
+    background-color: #0056b3; /* Darker shade for hover effect */
+    color: white;
+}
+
+/*form*/
+
+.contact-form {
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 20px;
+  background: #f9f9f9;
+  border-radius: 8px;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  box-sizing: border-box; /* For proper padding and width */
+}
+
+.form-group textarea {
+  height: 150px;
+  resize: vertical; /* Allows only vertical resize */
+}
+
+.submit-btn {
+  background: #007bff;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.submit-btn:hover {
+  background: #0056b3;
+}
+
+
+/* zig zag*/
+
+.zigzag-container {
+  max-width: 1200px;
+  margin: auto;
+  overflow: hidden;
+}
+
+.zigzag-section {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  margin-bottom: 40px;
+}
+
+.zigzag-section:nth-child(even) {
+  flex-direction: row-reverse; /* Reverse the order for even sections */
+}
+
+.text-content, .image-content {
+  flex: 1;
+  padding: 15px;
+}
+
+.image-content img {
+  width: calc(33.33% - 10px); /* Adjust width to 1/3 of the container minus some margin */
+  height: auto;
+  margin: 5px; /* Small margin around images */
+}
+
+.image-content {
+  display: flex; /* Aligns images in a row */
+  justify-content: space-between; /* Spaces images evenly */
+}
+
+
+.dark-blue-nav {
+  background-color: #003366; /* Replace with your desired dark blue color */
+  
+}
+
+
+/* Caption of Modal Image */
+#caption {
+  text-align: center;
+  color: #ccc;
+  padding: 10px 0;
+  margin-top: 15px; /* Space above the caption */
+  width: 100%; /* Ensure the caption spans the entire width */
+  box-sizing: border-box; /* Adjust box model to include padding */
+  position: absolute; /* Position it relative to the modal */
+  bottom: 10px; /* Position from the bottom of the modal */
+  left: 0; /* Align to the left edge of the modal */
+}
+
+
+.modal-content-wrapper {
+  text-align: center; /* Center the content */
+  padding: 20px; /* Add some padding */
+}
+
+.modal-content {
+  max-width: 90%; /* Adjust the width as needed */
+  height: auto; /* Maintain aspect ratio */
+  margin-bottom: 15px; /* Space between image and caption */
+}
+
+.image-caption {
+  color: #ccc; /* Caption text color */
+  font-size: 16px; /* Adjust font size as needed */
+  text-align: center; /* Center the caption text */
+}
+
+
+
+/*For better product cards*/
+.card {
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0,0,0,0.2);
+}
+
+.card .card-image img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.card .card-image:hover img {
+  transform: scale(1.05);
+}
+
+.card .card-image:hover::after {
+  content: "";
+  position: absolute;
+  top: 0; right: 0; bottom: 0; left: 0;
+  background: rgba(0,0,0,0.3);
+}
+
+.card .card-action {
+  padding: 15px;
+  background: #f8f8f8;
+}
+
+.card .card-title {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+button.more-info {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 15px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button.more-info:hover {
+  background-color: #0056b3;
+}
+
+
+/*centering headers*/
+/* Center all headers except those in the zigzag section */
+header:not(.zigzag-container) .header {
+  text-align: center;
+}
+
+/* Alternatively, if you have headers directly under the main container */
+main > .header {
+  text-align: center;
+}
+
+/* If your headers are within other specific sections, you can target them individually */
+.some-other-section .header {
+  text-align: center;
+}
+
+
+/*line between cat and dog*/
+#Cat {
+  position: relative;
+  padding-top: 50px; /* Space above the Cat header */
+}
+
+#Cat::before {
+  content: '';
+  position: absolute;
+  top: 0px; /* Position slightly above the Cat section */
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%; /* Adjust the width as desired */
+  height: 3px;
+  background: linear-gradient(to right, #ef1f1f, #ffb6b6); /* Gradient from dark to light */
+  border-radius: 2px;
+  box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+}
+
+@media only screen and (max-width: 768px) {
+  #Cat::before {
+      width: 100%; /* A wider line on smaller screens for better visibility */
+  }
+}
+
+
+/*video*/
+.banner-container video {
+  width: 40%;
+  height: auto;
+  object-fit: cover; /* This will ensure the video covers the full container */
+  
+}
+
+
+.banner-container {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start; /* Aligns content to the left */
+  overflow: hidden; /* To handle overflow of the video */
+}
+
+/*scroll to top button*/
+#myBtn {
+  display: none; /* Hidden by default */
+  position: fixed; /* Fixed/sticky position */
+  bottom: 20px; /* Place the button at the bottom of the page */
+  right: 30px; /* Place the button 30px from the right */
+  z-index: 1000; /* Increased z-index */
+  border: none; /* Remove borders */
+  outline: none; /* Remove outline */
+  background-color: #ff0000; /* Bright red background for visibility */
+  color: white; /* White text color */
+  cursor: pointer; /* Add a mouse pointer on hover */
+  padding: 15px; /* Some padding */
+  border-radius: 50%; /* Rounded corners */
+  font-size: 18px; /* Increase font size */
+}
+
+#myBtn:hover {
+  background-color: #cc0000; /* Darker shade on hover */
+}
+
+#infoModal #popUpDescription {
+  margin-top: 10px;
+  padding: 10px;
+  background-color: #f1f1f1;
+  border-radius: 5px;
+  color: #333;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  font-size: 16px;
+}
+
